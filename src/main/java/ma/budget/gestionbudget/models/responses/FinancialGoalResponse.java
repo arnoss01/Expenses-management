@@ -1,19 +1,19 @@
-package ma.budget.gestionbudget.models.requests;
+package ma.budget.gestionbudget.models.responses;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
-@Data
+
 @NoArgsConstructor
 @AllArgsConstructor
-public class FinancialGoalRequest {
-
+@Data
+public class FinancialGoalResponse {
+    private Long id;
     private Double goal;
     private Float capitalPercentage;
     private String title;
     private LocalDateTime deadline;
-    private Long user;
 
 }
