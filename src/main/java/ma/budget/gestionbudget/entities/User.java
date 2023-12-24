@@ -2,14 +2,18 @@ package ma.budget.gestionbudget.entities;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
+import java.util.List;
 import java.util.Set;
 
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
 @Entity
+@Builder
 public class User {
 
     @Id
@@ -19,8 +23,8 @@ public class User {
     private String password;
     private Double balance;
     @OneToMany
-    private Set<Expense> expenses;
+    private List<Expense> expenses;
     @OneToMany
-    private Set<FinancialGoal>financialGoals;
+    private List<FinancialGoal> financialGoals;
 
 }

@@ -19,7 +19,7 @@ public interface UserMapper {
     User userRequestToUser(UserRequest userRequest);
     UserResponse userToUserRespoonse(User user);
     List<UserResponse> mapUser(List<User> user);
-    Set<UserResponse> mapUser(Set<User> user);
+    //Set<UserResponse> mapUser(Set<User> user);
 
 
 }

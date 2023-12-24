@@ -2,6 +2,7 @@ package ma.budget.gestionbudget.entities;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -11,6 +12,7 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @Data
 @Entity
+@Builder
 public class FinancialGoal {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

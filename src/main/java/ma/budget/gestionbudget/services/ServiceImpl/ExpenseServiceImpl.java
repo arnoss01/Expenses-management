@@ -19,12 +19,12 @@ public class ExpenseServiceImpl implements ExpenseService {
 
     @Override
     public ExpenseResponse addExpense(ExpenseRequest expenseRequest) {
-        return ExpenseMapper.INSTANCE.expenseToExpenseRespoonse(expenseRepository.save(ExpenseMapper.INSTANCE.expenseRequestToExpense(expenseRequest)));
+        return ExpenseMapper.INSTANCE.expenseToExpenseResponse(expenseRepository.save(ExpenseMapper.INSTANCE.expenseRequestToExpense(expenseRequest)));
     }
 
     @Override
     public ExpenseResponse getExpense(Long id) {
-        return ExpenseMapper.INSTANCE.expenseToExpenseRespoonse(expenseRepository.getReferenceById(id));
+        return ExpenseMapper.INSTANCE.expenseToExpenseResponse(expenseRepository.getReferenceById(id));
     }
 
     @Override
@@ -36,7 +36,7 @@ public class ExpenseServiceImpl implements ExpenseService {
     public ExpenseResponse updateExpense(ExpenseRequest expenseRequest, Long id) {
         Expense expense = ExpenseMapper.INSTANCE.expenseRequestToExpense(expenseRequest);
         expense.setId(id);
-        return ExpenseMapper.INSTANCE.expenseToExpenseRespoonse(expenseRepository.save(expense));
+        return ExpenseMapper.INSTANCE.expenseToExpenseResponse(expenseRepository.save(expense));
     }
 
     @Override

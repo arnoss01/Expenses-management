@@ -14,6 +14,6 @@ public class FinancialGoalRequest {
     private Float capitalPercentage;
     private String title;
     private LocalDateTime deadline;
-    private Long user;
+    private Long userId;
 
 }

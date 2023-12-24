@@ -13,13 +13,12 @@ import java.util.List;
 import java.util.Set;
 
 @Mapper(componentModel = "spring", injectionStrategy = InjectionStrategy.CONSTRUCTOR, unmappedTargetPolicy = ReportingPolicy.IGNORE)
-
 public interface ExpenseCategoryMapper {
     ExpenseCategoryMapper INSTANCE = Mappers.getMapper(ExpenseCategoryMapper.class);
 
     ExpenseCategory expenseCategoryRequestToExpenseCategory(ExpenseCategoryRequest expenseCategoryRequest);
     ExpenseCategoryResponse expenseCategoryToExpenseCategoryRespoonse(ExpenseCategory expenseCategory);
     List<ExpenseCategoryResponse> mapExpenseCategory(List<ExpenseCategory> expenseCategory);
-    Set<ExpenseCategoryResponse> mapExpenseCategory(Set<ExpenseCategory> expenseCategory);
+   // Set<ExpenseCategoryResponse> mapExpenseCategory(Set<ExpenseCategory> expenseCategory);
 
 }

@@ -12,13 +12,12 @@ import org.mapstruct.factory.Mappers;
 import java.util.List;
 import java.util.Set;
 
-@Mapper(componentModel = "spring", injectionStrategy = InjectionStrategy.CONSTRUCTOR, unmappedTargetPolicy = ReportingPolicy.IGNORE)
-public interface ExpenseMapper
+@Mapper(componentModel = "spring", injectionStrategy = InjectionStrategy.CONSTRUCTOR, unmappedTargetPolicy = ReportingPolicy.IGNORE)public interface ExpenseMapper
 {
     ExpenseMapper INSTANCE = Mappers.getMapper(ExpenseMapper.class);
     Expense expenseRequestToExpense(ExpenseRequest expenseRequest);
-    ExpenseResponse expenseToExpenseRespoonse(Expense expense);
+    ExpenseResponse expenseToExpenseResponse(Expense expense);
     List<ExpenseResponse> mapExpense(List<Expense> expense);
-    Set<ExpenseResponse> mapExpense(Set<Expense> expense);
+   // Set<ExpenseResponse> mapExpense(Set<Expense> expense);
 
 }
