@@ -5,8 +5,6 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.List;
-
 @Data
 @NoArgsConstructor
 @Builder
@@ -14,5 +12,4 @@ import java.util.List;
 public class ExpenseCategoryRequest {
 
     private String category;
-    private List<Long> expensesId;
 }

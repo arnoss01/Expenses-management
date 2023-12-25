@@ -18,9 +18,5 @@ public class UserRequest {
     private String password;
     private Double balance;
 
-    private List<Long> expensesId;
-
-    private List<Long>financialGoalsId;
-
 
 }
