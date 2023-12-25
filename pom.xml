@@ -106,11 +106,11 @@
                             <artifactId>mapstruct-processor</artifactId>
                             <version>1.4.2.Final</version>
                         </path>
-                        <path>
+                        <!-- <path>
                             <groupId>org.projectlombok</groupId>
                             <artifactId>lombok-mapstruct-binding</artifactId>
                             <version>1.18.30</version>
-                        </path>
+                        </path> -->
                     </annotationProcessorPaths>
                 </configuration>
             </plugin>
