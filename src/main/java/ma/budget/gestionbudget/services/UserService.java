@@ -4,7 +4,6 @@ import ma.budget.gestionbudget.models.requests.UserRequest;
 import ma.budget.gestionbudget.models.responses.UserResponse;
 
 import java.util.List;
-import java.util.Set;
 
 public interface UserService {
 

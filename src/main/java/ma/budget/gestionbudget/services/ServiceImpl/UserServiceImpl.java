@@ -6,7 +6,6 @@ import ma.budget.gestionbudget.mappers.UserMapper;
 import ma.budget.gestionbudget.models.requests.UserRequest;
 import ma.budget.gestionbudget.models.responses.UserResponse;
 import ma.budget.gestionbudget.services.UserService;
-import org.mapstruct.Mapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.List;
