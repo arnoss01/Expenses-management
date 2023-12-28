@@ -18,6 +18,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public UserResponse addUser(UserRequest userRequest) {
+        // A perfect example of shit and unclean code <3
         return UserMapper.INSTANCE.userToUserRespoonse(userRepository.save(UserMapper.INSTANCE.userRequestToUser(userRequest)));
     }
 
