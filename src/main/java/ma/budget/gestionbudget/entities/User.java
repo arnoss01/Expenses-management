@@ -21,9 +21,9 @@ public class User {
     private String userName;
     private String password;
     private Double balance;
-    @OneToMany
+    @OneToMany(fetch = FetchType.LAZY)
     private List<Expense> expenses;
-    @OneToMany
+    @OneToMany(fetch = FetchType.LAZY)
     private List<FinancialGoal> financialGoals;
 
 }

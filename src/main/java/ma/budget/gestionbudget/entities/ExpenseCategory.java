@@ -18,6 +18,6 @@ public class ExpenseCategory {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String category;
-    @OneToMany
+    @OneToMany(fetch = FetchType.LAZY)
     private List<Expense> expenses;
 }

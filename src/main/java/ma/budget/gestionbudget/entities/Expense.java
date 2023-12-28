@@ -21,9 +21,9 @@ public class Expense {
     private String description;
     private LocalDateTime spendingDate;
     private Double ammount;
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     private User user;
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     private ExpenseCategory expenseCategory;
 
 }
