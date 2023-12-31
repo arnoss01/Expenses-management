@@ -1,8 +1,5 @@
 package ma.budget.gestionbudget;
 
-import java.util.Arrays;
-import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -10,8 +7,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import ma.budget.gestionbudget.Repository.UserRepository;
 import ma.budget.gestionbudget.entities.User;
-import ma.budget.gestionbudget.models.requests.UserRequest;
-import ma.budget.gestionbudget.services.UserService;
 
 @SpringBootApplication
 public class GestionBudgetApplication implements CommandLineRunner{
