@@ -21,7 +21,8 @@ public class Expense {
     private String description;
     private LocalDateTime spendingDate;
     private Double ammount;
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne
+    @JoinColumn(name="expense_category_id", nullable=false)
     private ExpenseCategory expenseCategory;
 
 }
