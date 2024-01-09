@@ -17,7 +17,6 @@ public class ExpenseRequest {
     private String description;
     private LocalDateTime spendingDate;
     private Double ammount;
-    private Long userId;
     private Long expenseCategoryId;
 
 }

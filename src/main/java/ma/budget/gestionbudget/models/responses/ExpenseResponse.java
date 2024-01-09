@@ -17,7 +17,6 @@ public class ExpenseResponse {
     private String description;
     private LocalDateTime spendingDate;
     private Double ammount;
-    private UserResponse user;
     private ExpenseCategoryResponse expenseCategory;
 
 }

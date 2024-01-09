@@ -17,6 +17,5 @@ public class FinancialGoalResponse {
     private Float capitalPercentage;
     private String title;
     private LocalDateTime deadline;
-    private UserResponse user;
 
 }

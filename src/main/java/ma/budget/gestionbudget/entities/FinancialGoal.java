@@ -21,6 +21,4 @@ public class FinancialGoal {
     private Float capitalPercentage;
     private String title;
     private LocalDateTime deadline;
-    @ManyToOne(fetch = FetchType.LAZY)
-    private User user;
 }
